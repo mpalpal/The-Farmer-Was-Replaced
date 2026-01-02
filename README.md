@@ -3,7 +3,7 @@
 **Store: https://store.steampowered.com/app/2060160/_Replace/**  
 **Wiki: https://thefarmerwasreplaced.wiki.gg/**
 ## ・ Maze Solver (迷路探索アルゴリズム)
-#### maze_search.py @Maze  
+#### maze_solver.py @Maze  
 `Weird_Substance` で生成される現環境最大サイズのランダム迷路を自動で探索し、  
 宝（`Entiteis.Tresure`）を発見・収穫するためのアルゴリズム
 
