@@ -1,15 +1,27 @@
 # _The Farmer Was Replaced_
 このリポジトリは、ゲーム「_The Farmer Was Replaced (和：農家はReplace()されました)_」における様々なアルゴリズムを示します。  
+
 **Store: https://store.steampowered.com/app/2060160/_Replace/**  
 **Wiki: https://thefarmerwasreplaced.wiki.gg/**
-## ・ Maze Solver (迷路探索アルゴリズム)
-#### maze_solver.py @Maze  
+
+---
+
+## ・ Pumpkin (カボチャ収穫)
+#### pumpkin.py
+
+---
+
+## ・ Cactus Sort (サボテンソート)
+#### cactus_sort.py
+
+---
+
+## ・ Maze Solver (迷路探索)
+#### maze_solver.py
 `Weird_Substance` で生成される現環境最大サイズのランダム迷路を自動で探索し、  
 宝（`Entiteis.Tresure`）を発見・収穫するためのアルゴリズム
 
 迷路はゲーム仕様により **木構造（ループなし）** であり、この特性を活かした高速・軽量 DFS を実装しています。
-
----
 
 ## 特徴
 
@@ -33,8 +45,6 @@
   
 になると木構造の前提を満たさなくなるため、迷路をリセットして再生成する設計
 
----
-
 ## アルゴリズム概要
 
 迷路探索は次の流れで行われます。
@@ -49,8 +59,6 @@
 4. 行き止まりになったら`move_hist`を利用して分岐点まで一気に戻る
 5. 上記を繰り返し、最終的に`measure()`に到達したら、`Entities.Treasure` を収穫して終了
 
----
-
 ### 補足
 
 本アルゴリズムはゲーム仕様に深く依存しています。  
@@ -58,4 +66,9 @@
 
 - 迷路が木構造であること  
 - ゴール位置（measure）が迷路生成後に変化しないこと  
-- 通路方向が North / East / South / West の4方位であること  
+- 通路方向が North / East / South / West の4方位であること
+
+---
+
+## ・ Dinosaur
+#### dinosaur.py
